@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "npcmain:block/kingdom_block"
+    }
+  }
+}

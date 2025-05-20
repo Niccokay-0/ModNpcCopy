@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "npcmain:block/kingdom_block_down",
+    "east": "npcmain:block/kingdom_block_east",
+    "north": "npcmain:block/kingdom_block_north",
+    "particle": "npcmain:block/kingdom_block_particle",
+    "south": "npcmain:block/kingdom_block_south",
+    "up": "npcmain:block/kingdom_block_up",
+    "west": "npcmain:block/kingdom_block_west"
+  }
+}

@@ -1,0 +1,19 @@
+// 1.21.5	2025-05-20T15:39:35.3412452	Tags for minecraft:item mod id npcmain
+851dea2e1e50c30e02f08e4c99caadf90031349f data/minecraft/tags/item/arrows.json
+8c3b711247c2b1263dc67bacee5234c3f9e42fc0 data/minecraft/tags/item/axes.json
+2f98bdb86b4328b32aea9aeb7d5eeea03e33826b data/minecraft/tags/item/chest_armor.json
+2f98bdb86b4328b32aea9aeb7d5eeea03e33826b data/minecraft/tags/item/enchantable/chest_armor.json
+dc46ac3a76fac147c33049846da72be47efe92a3 data/minecraft/tags/item/enchantable/foot_armor.json
+6ad8bb9b3fb5240e035362ceaf17c35beaafae84 data/minecraft/tags/item/enchantable/head_armor.json
+f562dfb4ffac6c1ac13795578d581090eae38edc data/minecraft/tags/item/enchantable/leg_armor.json
+2cce6f9a0a22ed82ac3a1e6e414c0d996a503446 data/minecraft/tags/item/enchantable/mining.json
+0171392b78ef7f8f71b316259c3837d8baad8f06 data/minecraft/tags/item/enchantable/mining_loot.json
+54c4b36f0968581b6b44dcc3f68bd2ce60be1c86 data/minecraft/tags/item/enchantable/sword.json
+dc46ac3a76fac147c33049846da72be47efe92a3 data/minecraft/tags/item/foot_armor.json
+6ad8bb9b3fb5240e035362ceaf17c35beaafae84 data/minecraft/tags/item/head_armor.json
+b0c5f7bfe6418d2ec0c8bd0cf68717d3cdf71df7 data/minecraft/tags/item/hoes.json
+f562dfb4ffac6c1ac13795578d581090eae38edc data/minecraft/tags/item/leg_armor.json
+0171392b78ef7f8f71b316259c3837d8baad8f06 data/minecraft/tags/item/pickaxes.json
+79130f6b881c430b512ab7bc49737c2ca105de6d data/minecraft/tags/item/shovels.json
+54c4b36f0968581b6b44dcc3f68bd2ce60be1c86 data/minecraft/tags/item/swords.json
+33cb3dc7e8d23f5a84a3f7afd171422cfc4e4925 data/npcmain/tags/item/blazed_items.json

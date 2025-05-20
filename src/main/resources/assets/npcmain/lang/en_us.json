@@ -1,0 +1,28 @@
+{
+  "npc.creative.tab.default" : "Npc Tab",
+  "npc.gui.kingdom.creation.editbox.default" : "Enter your kingdom name...",
+  "gui.npc.menur.dismiss" : "Dismiss",
+  "gui.npc.menur.recruit" : "Recruit",
+  "npc.gui.recruit.failed.kingdom.false" : "Failed! Your kingdom doesn't exist yet!",
+  "npc.gui.kingdom.food" : "Food Value:",
+  "npc.gui.kingdom.neededfood" : "Food Needed:",
+
+  "npc.gui.kingdom.creation.creation.create" :  "Create",
+  "npc.gui.kingdom.title" :  "",
+  "npc.gui.kingdom.page" :  "Page",
+
+  "npc.gui.kingdom.title.government.monarchy" : "Your Monarchy:",
+  "npc.gui.kingdom.title.government.feudalism" : "Your Feudalism:",
+  "npc.gui.kingdom.title.government.democracy" : "Your Democracy:",
+  "npc.gui.kingdom.title.government.theocracy" : "Your Theocracy:",
+  "npc.gui.kingdom.title.government.oligarchy" : "Your Oligarchy:",
+  "npc.gui.kingdom.title.government.dictatorship" : "Your Dictatorship:",
+
+  "npc.gui.kingdom.government.monarchy" : "Monarchy",
+  "npc.gui.kingdom.government.feudalism" : "Feudalism",
+  "npc.gui.kingdom.government.democracy" : "Democracy",
+  "npc.gui.kingdom.government.theocracy" : "Theocracy",
+  "npc.gui.kingdom.government.oligarchy" : "Oligarchy",
+  "npc.gui.kingdom.government.dictatorship" : "Dictatorship"
+
+}

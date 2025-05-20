@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "npcmain:blazed"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "npcmain:blazed"
+      }
+    ]
+  }
+}
