@@ -10,9 +10,10 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nic.npc.NpcMain;
+import net.nic.npc.block.custom.MCropBlock;
+import net.nic.npc.block.custom.MBerryBush;
 import net.nic.npc.block.custom.kingdomBlock.KingdomTableBlock;
 import net.nic.npc.item.MItems;
-import net.nic.npc.item.custom.MCropBlock;
 
 import java.util.function.Function;
 
@@ -30,6 +31,10 @@ public class MBlocks {
     public static final DeferredBlock<Block> STRAWBERRY_CROP = registerBlockWithItem(
             "strawberry_crop",
             name -> new MCropBlock(name, BlockBehaviour.Properties.ofFullCopy(Blocks.POTATOES).instabreak().noOcclusion()));
+
+    public static final DeferredBlock<Block> BLUEBERRY_BUSH = registerBlockWithItem(
+            "blueberry_bush",
+            name -> new MBerryBush(name, BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH).instabreak().noOcclusion()));
 
 
     public static <B extends Block> DeferredBlock<B> registerBlockWithItem(String name, Function<ResourceLocation, ? extends B> func) {

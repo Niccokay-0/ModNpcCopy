@@ -1,4 +1,4 @@
-package net.nic.npc.item.custom;
+package net.nic.npc.block.custom;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.nic.npc.item.MItems;
 
 public class MCropBlock extends CropBlock {
-
 
     public MCropBlock(ResourceLocation name, BlockBehaviour.Properties properties) {
         super(properties.setId(ResourceKey.create(Registries.BLOCK, name)));

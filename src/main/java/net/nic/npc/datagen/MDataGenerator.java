@@ -27,11 +27,11 @@ public class MDataGenerator {
         MEquipAssetProv equipmentAssetProvider = new MEquipAssetProv(output, NpcMain.MODID);
 
         var blockTags = new MBlockTagProvider(output, lookupProvider);
-        generator.addProvider(true,blockTags);
-        generator.addProvider(true,new MItemTagProvider(output, lookupProvider, blockTags));
+        generator.addProvider(true, blockTags);
+        generator.addProvider(true, new MItemTagProvider(output, lookupProvider, blockTags));
         generator.addProvider(true, new MModelGen(output));
         generator.addProvider(true, equipmentAssetProvider);
-generator.addProvider(true, new LootTableProvider(output, Set.of(), List.of(new LootTableProvider.SubProviderEntry(MBlockLootSubProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(true, new LootTableProvider(output, Set.of(), List.of(new LootTableProvider.SubProviderEntry(MBlockLootSubProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
     }
 }

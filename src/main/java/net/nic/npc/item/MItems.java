@@ -65,15 +65,22 @@ public class MItems {
     public static final DeferredItem<Item> KIWI = ITEMS.register("kiwi", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.KIWI,CustomConsumables.FASTEDIBLE)));
     public static final DeferredItem<Item> PEACH = ITEMS.register("peach", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.PEACH, CustomConsumables.FASTEDIBLE)));
     public static final DeferredItem<Item> AVOCADO = ITEMS.register("avocado", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.AVOCADO,CustomConsumables.FASTEDIBLE)));
-    public static final DeferredItem<Item> BLUEBERRY = ITEMS.register("blueberry", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.BLUEBERRY, CustomConsumables.FASTEDIBLE)));
     public static final DeferredItem<Item> PINEAPPLE = ITEMS.register("pineapple", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.PINEAPPLE, CustomConsumables.PINEAPPLE)));
 
-    //public static final DeferredItem<Item> STRAWBERRY = ITEMS.registerItem("strawberry", name -> new MItem(name, new Item.Properties().food(CustomFoodProperties.STRAWBERRY, CustomConsumables.STRAWBERRY)));
+
     public static final DeferredItem<BlockItem> STRAWBERRY = ITEMS.register(
             "strawberry",
             name -> new MBlockItem(name,
                     MBlocks.STRAWBERRY_CROP.get(),
                     new Item.Properties().food(CustomFoodProperties.STRAWBERRY, CustomConsumables.STRAWBERRY) // or your custom food properties
+            )
+    );
+
+    public static final DeferredItem<BlockItem> BLUEBERRY = ITEMS.register(
+            "blueberry",
+            name -> new MBlockItem(name,
+                    MBlocks.BLUEBERRY_BUSH.get(),
+                    new Item.Properties().food(CustomFoodProperties.BLUEBERRY, CustomConsumables.FASTEDIBLE) // or your custom food properties
             )
     );
 

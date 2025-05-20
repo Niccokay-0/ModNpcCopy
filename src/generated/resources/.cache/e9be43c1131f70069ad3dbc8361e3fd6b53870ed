@@ -1,4 +1,5 @@
-// 1.21.5	2025-05-20T16:26:51.5725768	Model Definitions - npcmain
+// 1.21.5	2025-05-20T22:28:38.4519731	Model Definitions - npcmain
+260743e23755a17246f2a2850171380257710c4f assets/npcmain/blockstates/blueberry_bush.json
 41194eee23166712667f00980adf76dadaf0a641 assets/npcmain/blockstates/kingdom_block.json
 a989546bb585d56908dc17c5ce3d96fc9b15c1a2 assets/npcmain/blockstates/strawberry_crop.json
 5a3c16ac225dadd8cc94628108ad5c857e6339e9 assets/npcmain/items/avocado.json
@@ -13,6 +14,7 @@ cddc98a2c154369f245225efa5d83c862d8d1120 assets/npcmain/items/blazed_hoe.json
 1cab0b04121fee201c869492a292f54871a10aed assets/npcmain/items/blazed_shovel.json
 423bcc29eddf919a1a13bf3285d5d91b155a9c0d assets/npcmain/items/blazed_sword.json
 c941fe02d29dd39b8c47dd9b335fd7fa7247f415 assets/npcmain/items/blueberry.json
+2faef9c1fc8690acbdd682739c8f53eac8df1c62 assets/npcmain/items/blueberry_bush.json
 b53d6edff7a74a0805243b57716b42b874bba991 assets/npcmain/items/coconut.json
 e35048b74d589f61f12553fbf091ff505d45a74e assets/npcmain/items/coconut_drinkable.json
 be119dbc9f145d94e419167ff82c4ad1e0b16002 assets/npcmain/items/coconut_shards.json
@@ -30,6 +32,10 @@ bc7b234c257c64f249227de3c8dc0dd3a61a3581 assets/npcmain/items/stone_arrow.json
 4124810e8a147e07697f7e6be8ea4a134ac8610e assets/npcmain/items/strawberry.json
 5fc324d0214ae4800cfc35728aff8c8802b7cdf5 assets/npcmain/items/strawberry_crop.json
 bf0e59c20a62d022d6702bcf737df72624a76a75 assets/npcmain/items/wooden_arrow.json
+0a681a4de708f02130723de927e925c9d0ced3dd assets/npcmain/models/block/blueberry_bush_stage0.json
+8263ee7c611608e1595e12134c9cc9f5f2ef9a05 assets/npcmain/models/block/blueberry_bush_stage1.json
+b7f646b85a35275f9b239740901a6220f447ab12 assets/npcmain/models/block/blueberry_bush_stage2.json
+b3e97dadcd5a4f774e46ad4ed7f0a3c7fdae5658 assets/npcmain/models/block/blueberry_bush_stage3.json
 9cda5ac6ea674807b1d6eedb73294847f0c1d503 assets/npcmain/models/block/kingdom_block.json
 9e7eaa098062a494b4776159613e437beb9dbe8e assets/npcmain/models/block/strawberry_crop_stage0.json
 6a31a07cb158129b31de94e85eb34e6a110a1fa1 assets/npcmain/models/block/strawberry_crop_stage1.json
@@ -91,6 +97,7 @@ f18f2490c9d34bbc1143cfc66812bbb88418a2f8 assets/npcmain/models/item/blazed_picka
 bec2269e3ff2ca9efd18a162c0b0d70a022f8b3c assets/npcmain/models/item/blazed_shovel.json
 df26a4feae445ea6e4b9c4a8d0d8c328171248b0 assets/npcmain/models/item/blazed_sword.json
 229052824a524e2afccbb93c543fbfbef1e4f7aa assets/npcmain/models/item/blueberry.json
+bc908a7b5db11d94091f8a3c3e6d386e4fda062e assets/npcmain/models/item/blueberry_bush.json
 e7c3d65ad23c55c2d22c1a6015fe21c9ff20bfb9 assets/npcmain/models/item/coconut.json
 baede6be247cc2d78e7185dc63ea616ad51da6f0 assets/npcmain/models/item/coconut_drinkable.json
 9219ac0e2aecaf858e53744823058acc9886c96f assets/npcmain/models/item/coconut_shards.json

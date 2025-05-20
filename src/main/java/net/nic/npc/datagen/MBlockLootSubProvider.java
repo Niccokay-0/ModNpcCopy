@@ -45,6 +45,7 @@ public class MBlockLootSubProvider extends BlockLootSubProvider {
         this.dropSelf(MBlocks.KINGDOM_BLOCK.get());
 
         createCropBlockWithSameSeed(MBlocks.STRAWBERRY_CROP.get(), MItems.STRAWBERRY.get(),3, registrylookup);
+        createCropBlockWithSameSeed(MBlocks.BLUEBERRY_BUSH.get(), MItems.BLUEBERRY.get(),3,registrylookup);
     }
 
     private void createCropBlockWithSameSeed(Block cropBlock, BlockItem drop , int MAXAGE, HolderLookup.RegistryLookup<Enchantment> registrylookup) {

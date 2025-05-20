@@ -1,8 +1,6 @@
 package net.nic.npc;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -16,6 +14,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.nic.npc.block.CutoutRenderers;
 import net.nic.npc.block.MBlocks;
 import net.nic.npc.block.MEntityBlocks;
 import net.nic.npc.creativeTabs.MCreativeTabs;
@@ -71,12 +70,12 @@ public class NpcMain
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            event.enqueueWork( ()->
-                    ItemBlockRenderTypes.setRenderLayer(MBlocks.STRAWBERRY_CROP.get(), RenderType.CUTOUT)
-            );
+            CutoutRenderers.render(event);
         }
 
     }
+
+
 
     public void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(MEntities.NPC.get(), NPCRenderer::new);
