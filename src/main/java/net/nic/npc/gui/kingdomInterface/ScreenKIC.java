@@ -19,6 +19,32 @@ import java.util.List;
 
 public class ScreenKIC extends AbstractContainerScreen<MenuKIC> {
 
+
+    /**
+     * Translation Variables:
+     */
+    public static String creationCreate = "npc.gui.kingdom.creation.create";
+    public static String creationEditbox = "npc.gui.kingdom.creation.editbox.default";
+
+    public static String governmentMonarchy = "npc.gui.kingdom.government.monarchy";
+    public static String governmentFeudalism = "npc.gui.kingdom.government.feudalism";
+    public static String governmentDemocracy = "npc.gui.kingdom.government.democracy";
+    public static String governmentTheocracy = "npc.gui.kingdom.government.theocracy";
+    public static String governmentOligarchy = "npc.gui.kingdom.government.oligarchy";
+    public static String governmentDictatorship = "npc.gui.kingdom.government.dictatorship";
+
+    public static String governmentTitleMonarchy = "npc.gui.kingdom.title.government.monarchy";
+    public static String governmentTitleFeudalism = "npc.gui.kingdom.title.government.feudalism";
+    public static String governmentTitleDemocracy = "npc.gui.kingdom.title.government.democracy";
+    public static String governmentTitleTheocracy = "npc.gui.kingdom.title.government.theocracy";
+    public static String governmentTitleOligarchy = "npc.gui.kingdom.title.government.oligarchy";
+    public static String governmentTitleDictatorship = "npc.gui.kingdom.title.government.dictatorship";
+
+    public static String stringFood = "npc.gui.kingdom.food";
+    public static String stringNeededFood = "npc.gui.kingdom.neededfood";
+
+
+
     private EditBox editBox;
     private CycleButton<Object> governmentCycle;
     Government selectedGovernment = Government.MONARCHY;
@@ -134,7 +160,7 @@ public class ScreenKIC extends AbstractContainerScreen<MenuKIC> {
         this.neededFood = kingdom.getFoodNeeded();
     }
     private void creationInit() {
-        this.createButton = Button.builder(Component.translatable("npc.gui.kingdom.creation.creation.create"), button -> {
+        this.createButton = Button.builder(Component.translatable(creationCreate), button -> {
 
             this.menu.createKingdom(this.menu.player.getUUID(), this.editBox.getValue(), selectedGovernment);
 
@@ -145,7 +171,7 @@ public class ScreenKIC extends AbstractContainerScreen<MenuKIC> {
             this.onClose();
         }).pos((this.width / 2) - 70, (this.height / 2) + 50).size(60, 20).build();
 
-        this.editBox = new EditBox(this.font, this.width / 2, this.height / 2, 150, 20, Component.translatable("npc.gui.kingdom.creation.editbox.default"));
+        this.editBox = new EditBox(this.font, this.width / 2, this.height / 2, 150, 20, Component.translatable(creationEditbox));
         this.editBox.setPosition((width / 2) - (editBox.getWidth() / 2), height / 2);
         this.editBox.setFocused(true);
         this.editBox.setMaxLength(16);

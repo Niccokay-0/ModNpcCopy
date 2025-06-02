@@ -1,5 +1,12 @@
 {
   "values": [
-    "npcmain:blazed_pickaxe"
+    "npcmain:blazed_pickaxe",
+    "npcmain:ringender_pickaxe",
+    "npcmain:purpur_pickaxe",
+    "npcmain:blazed_axe",
+    "npcmain:ringender_axe",
+    "npcmain:purpur_axe",
+    "npcmain:blazed_shovel",
+    "npcmain:blazed_hoe"
   ]
 }

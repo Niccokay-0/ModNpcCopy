@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "npcmain:coconut"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npcmain:coconut_drinkable"
+  }
+}

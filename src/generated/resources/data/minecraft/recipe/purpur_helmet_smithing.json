@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:purpured_netherite_ingot",
+  "base": "minecraft:netherite_helmet",
+  "result": {
+    "id": "npcmain:purpur_helmet"
+  },
+  "template": "npcmain:blaze_smithing_upgrade"
+}

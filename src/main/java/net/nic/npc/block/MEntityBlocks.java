@@ -5,6 +5,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nic.npc.NpcMain;
+import net.nic.npc.block.custom.infuser.InfuserBlockBE;
 import net.nic.npc.block.custom.kingdomBlock.KingdomTableBE;
 
 import java.util.function.Supplier;
@@ -19,6 +20,13 @@ public class MEntityBlocks {
             name -> new BlockEntityType<>(
                     KingdomTableBE::new,
                     MBlocks.KINGDOM_BLOCK.get()));
+
+
+    public static final Supplier<BlockEntityType<InfuserBlockBE>> INFUSED_BE = BLOCK_ENTITY_TYPES.register(
+            "infuser_be",
+            name -> new BlockEntityType<>(
+                    InfuserBlockBE::new,
+                    MBlocks.INFUSER.get()));
 
 
 

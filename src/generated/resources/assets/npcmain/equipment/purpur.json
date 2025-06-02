@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "npcmain:purpur"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "npcmain:purpur"
+      }
+    ]
+  }
+}

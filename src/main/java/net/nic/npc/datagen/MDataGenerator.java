@@ -28,10 +28,12 @@ public class MDataGenerator {
 
         var blockTags = new MBlockTagProvider(output, lookupProvider);
         generator.addProvider(true, blockTags);
-        generator.addProvider(true, new MItemTagProvider(output, lookupProvider, blockTags));
+        generator.addProvider(true,new MItemTagProvider(output, lookupProvider, blockTags));
         generator.addProvider(true, new MModelGen(output));
         generator.addProvider(true, equipmentAssetProvider);
         generator.addProvider(true, new LootTableProvider(output, Set.of(), List.of(new LootTableProvider.SubProviderEntry(MBlockLootSubProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        event.createProvider(MRecipeProvider.Runner::new);
+        generator.addProvider(true, new MLanguageProvider(output));
 
     }
 }

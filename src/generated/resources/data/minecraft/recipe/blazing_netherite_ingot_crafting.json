@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "#npcmain:blazed_items",
+    "Z": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npcmain:blazing_netherite_ingot"
+  }
+}

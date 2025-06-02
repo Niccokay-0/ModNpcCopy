@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:endered_netherite_ingot",
+  "base": "minecraft:netherite_helmet",
+  "result": {
+    "id": "npcmain:ringender_hood"
+  },
+  "template": "npcmain:ringender_smithing_upgrade"
+}

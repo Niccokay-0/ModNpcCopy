@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:blazing_netherite_ingot",
+  "base": "minecraft:netherite_shovel",
+  "result": {
+    "id": "npcmain:blazed_shovel"
+  },
+  "template": "npcmain:blaze_smithing_upgrade"
+}

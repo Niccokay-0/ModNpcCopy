@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#npcmain:ender_items",
+  "base": "minecraft:netherite_ingot",
+  "result": {
+    "id": "npcmain:endered_netherite_ingot"
+  },
+  "template": "#npcmain:ender_items"
+}

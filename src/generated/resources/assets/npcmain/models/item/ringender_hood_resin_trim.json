@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "npcmain:item/ringender_hood",
+    "layer1": "minecraft:trims/items/_trim_resin"
+  }
+}

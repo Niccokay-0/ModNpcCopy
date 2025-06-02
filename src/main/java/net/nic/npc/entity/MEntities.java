@@ -9,7 +9,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nic.npc.NpcMain;
 import net.nic.npc.entity.customEntity.npc.NPC;
-import net.nic.npc.entity.customEntity.tieredArrow.TieredArrowEntity;
+import net.nic.npc.entity.customEntity.projectile.musket.MusketProjectileEntity;
+import net.nic.npc.entity.customEntity.projectile.tieredArrow.TieredArrowEntity;
 
 import java.util.function.Supplier;
 
@@ -29,7 +30,13 @@ public class MEntities {
             ENTITY_TYPES.register("tiered_arrow", () ->
                     EntityType.Builder.<TieredArrowEntity>of(TieredArrowEntity::new, MobCategory.MISC)
                             .sized(0.5F, 0.5F)
-                            .build(ResourceKey.create(Registries.ENTITY_TYPE,ResourceLocation.fromNamespaceAndPath(NpcMain.MODID, "npc"))));
+                            .build(ResourceKey.create(Registries.ENTITY_TYPE,ResourceLocation.fromNamespaceAndPath(NpcMain.MODID, "tiered_arrow"))));
+
+    public static final Supplier<EntityType<MusketProjectileEntity>> BULLET =
+            ENTITY_TYPES.register("bullet", () ->
+                    EntityType.Builder.<MusketProjectileEntity>of(MusketProjectileEntity::new, MobCategory.MISC)
+                            .sized(0.5F, 0.5F)
+                            .build(ResourceKey.create(Registries.ENTITY_TYPE,ResourceLocation.fromNamespaceAndPath(NpcMain.MODID, "bullet"))));
 
 
 

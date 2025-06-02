@@ -1,1 +1,5 @@
-// 1.21.5	2025-05-18T11:30:57.5427921	Tags for minecraft:block mod id npcmain
+// 1.21.5	2025-05-25T14:40:37.5882509	Tags for minecraft:block mod id npcmain
+10136d47ffd84c3fa906c63914a77a6a312de9ef data/npcmain/tags/block/end_block.json
+e89562f67c86d1e6b2bf0b28628d0589eda654b4 data/npcmain/tags/block/nether_tree_foliage.json
+0ac5c10bc159a98ee34da3fa1582197565232dfe data/npcmain/tags/block/nether_woods.json
+d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/npcmain/tags/block/soul_ground.json

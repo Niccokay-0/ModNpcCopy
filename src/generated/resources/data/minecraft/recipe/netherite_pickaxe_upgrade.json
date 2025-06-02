@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:quartz",
+  "base": "npcmain:purpur_pickaxe",
+  "result": {
+    "id": "npcmain:purpur_pickaxe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

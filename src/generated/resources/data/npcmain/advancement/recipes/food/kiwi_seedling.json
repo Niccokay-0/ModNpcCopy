@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kiwi": {
+      "conditions": {
+        "items": [
+          {
+            "items": "npcmain:kiwi"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_kiwi_seedling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "npcmain:kiwi_seedling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "npcmain:kiwi_seedling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stick",
+      "has_kiwi",
+      "has_kiwi_seedling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "npcmain:kiwi_seedling"
+    ]
+  }
+}

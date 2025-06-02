@@ -18,6 +18,11 @@ import static org.apache.commons.lang3.StringUtils.capitalize;
 
 public class ScreenR extends AbstractContainerScreen<MenuR> {
 
+    public static String recruitBuy = "npc.gui.trading.buy";
+    public static String recruitRecruit = "gui.npc.menur.recruit";
+    public static String recruitDismiss = "gui.npc.menur.dismiss";
+
+
     private Button recruitButton;
     private Button dismissButton;
     private Button startTradeButton;
@@ -89,7 +94,7 @@ public class ScreenR extends AbstractContainerScreen<MenuR> {
 
         AtomicInteger buyY = new AtomicInteger(startY + yOffset + 10);
         // Buy button below trades
-        buyButton = Button.builder(Component.literal("Buy"), btn -> {
+        buyButton = Button.builder(Component.translatable(recruitBuy), btn -> {
             if (selectedTrade != null && canAfford(selectedTrade)) {
                 Inventory inv = this.menu.player.getInventory();
                 npc.addXp(selectedTrade.getXp());
@@ -141,13 +146,13 @@ public class ScreenR extends AbstractContainerScreen<MenuR> {
     }
 
     private void initRecruit() {
-        this.recruitButton = Button.builder(Component.translatable("gui.npc.menur.recruit"), btn -> {
+        this.recruitButton = Button.builder(Component.translatable(recruitRecruit), btn -> {
             this.menu.addCitizen(this.menu.player.getUUID(), this.menu.getNpc());
             onClose();
         }).size(70, 20).build();
         this.recruitButton.setPosition((width / 2) - 120, (height / 2) - 20);
 
-        this.dismissButton = Button.builder(Component.translatable("gui.npc.menur.dismiss"), btn -> {
+        this.dismissButton = Button.builder(Component.translatable(recruitDismiss), btn -> {
             onClose();
         }).size(70, 20).build();
         this.dismissButton.setPosition((width / 2) - 120, (height / 2) + 20);

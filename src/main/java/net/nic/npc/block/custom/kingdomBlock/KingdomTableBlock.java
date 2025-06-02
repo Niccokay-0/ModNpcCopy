@@ -3,6 +3,7 @@ package net.nic.npc.block.custom.kingdomBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
@@ -14,13 +15,14 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.nic.npc.NpcMain;
+import net.nic.npc.block.custom.MBlock;
 import net.nic.npc.gui.kingdomInterface.MenuKIC;
+import net.nic.npc.item.custom.InviteItem;
 import net.nic.npc.kingdom.Kingdom;
 import net.nic.npc.kingdom.events.KingdomEventManager;
 import org.jetbrains.annotations.Nullable;
@@ -28,12 +30,13 @@ import org.jetbrains.annotations.Nullable;
 import java.util.UUID;
 
 
-public class KingdomTableBlock extends Block implements EntityBlock {
+public class KingdomTableBlock extends MBlock implements EntityBlock {
 
     private Player player;
+    private Kingdom playerKingdom;
 
-    public KingdomTableBlock(Properties prop) {
-        super(prop);
+    public KingdomTableBlock(ResourceLocation name, Properties prop) {
+        super(name,prop);
     }
 
     @Override
@@ -45,14 +48,15 @@ public class KingdomTableBlock extends Block implements EntityBlock {
     @Override
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (stack.has(DataComponents.FOOD) && KingdomEventManager.getInstance().isInKingdom(player.getUUID())) {
-            KingdomEventManager.getInstance().addFood(player.getUUID(),stack.get(DataComponents.FOOD).nutrition(), stack);
+            KingdomEventManager.getInstance().addFood(player.getUUID(), stack.get(DataComponents.FOOD).nutrition(), stack);
             return InteractionResult.SUCCESS;
-
-        } else {
-            useWithoutItem(state, level, pos, player, hitResult);
         }
-        return InteractionResult.FAIL;
-
+        if (stack.getItem() instanceof InviteItem inviteItem) {
+            UUID kingdomID = KingdomEventManager.getInstance().getUser(player.getUUID()).getKingdomID();
+            inviteItem.createInvite(stack, kingdomID);
+            return InteractionResult.SUCCESS;
+        }
+         else return useWithoutItem(state, level, pos, player, hitResult);
     }
 
     @Override

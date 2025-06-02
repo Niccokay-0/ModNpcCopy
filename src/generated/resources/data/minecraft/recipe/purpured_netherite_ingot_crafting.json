@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "#npcmain:purpur_items",
+    "Z": "minecraft:netherite_ingot"
+  },
+  "pattern": [
+    "XXX",
+    "XZX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npcmain:purpured_netherite_ingot"
+  }
+}

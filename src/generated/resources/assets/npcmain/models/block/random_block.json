@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "npcmain:block/random_block_down",
+    "east": "npcmain:block/random_block_east",
+    "north": "npcmain:block/random_block_north",
+    "particle": "npcmain:block/random_block_particle",
+    "south": "npcmain:block/random_block_south",
+    "up": "npcmain:block/random_block_up",
+    "west": "npcmain:block/random_block_west"
+  }
+}

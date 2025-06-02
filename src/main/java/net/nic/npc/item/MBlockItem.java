@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 public class MBlockItem extends BlockItem {
 
 
-    public MBlockItem(ResourceLocation name, Block block, Properties properties) {
+    public MBlockItem(Block block, Properties properties, ResourceLocation name) {
         super(block, properties.setId(ResourceKey.create(Registries.ITEM, name)));
     }
 }

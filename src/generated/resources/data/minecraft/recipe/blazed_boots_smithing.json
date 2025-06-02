@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:blazing_netherite_ingot",
+  "base": "minecraft:netherite_boots",
+  "result": {
+    "id": "npcmain:blazed_boots"
+  },
+  "template": "npcmain:blaze_smithing_upgrade"
+}

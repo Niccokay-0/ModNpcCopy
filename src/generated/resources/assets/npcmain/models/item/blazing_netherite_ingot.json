@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "npcmain:item/blazing_netherite_ingot"
+  }
+}

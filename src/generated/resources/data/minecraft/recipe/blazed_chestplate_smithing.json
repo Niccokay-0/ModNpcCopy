@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:blazing_netherite_ingot",
+  "base": "minecraft:netherite_chestplate",
+  "result": {
+    "id": "npcmain:blazed_chestplate"
+  },
+  "template": "npcmain:blaze_smithing_upgrade"
+}

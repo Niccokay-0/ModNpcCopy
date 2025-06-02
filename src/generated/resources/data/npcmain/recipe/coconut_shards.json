@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_nugget",
+    "npcmain:coconut"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npcmain:coconut_shards"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    "npcmain:end_stone_projectile",
+    "npcmain:stone_projectile",
+    "npcmain:iron_projectile",
+    "npcmain:lead_projectile",
+    "npcmain:phosphorus_projectile",
+    "npcmain:tungsten_projectile"
+  ]
+}

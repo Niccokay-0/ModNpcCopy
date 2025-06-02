@@ -5,7 +5,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -43,12 +43,14 @@ public class MBlockLootSubProvider extends BlockLootSubProvider {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
 
         this.dropSelf(MBlocks.KINGDOM_BLOCK.get());
+        this.dropSelf(MBlocks.INFUSER.get());
 
         createCropBlockWithSameSeed(MBlocks.STRAWBERRY_CROP.get(), MItems.STRAWBERRY.get(),3, registrylookup);
-        createCropBlockWithSameSeed(MBlocks.BLUEBERRY_BUSH.get(), MItems.BLUEBERRY.get(),3,registrylookup);
+        createCropBlockWithSameSeed(MBlocks.BLUEBERRY_CROP.get(), MItems.BLUEBERRY.get(),3, registrylookup);
+        createCropBlockWithSameSeed(MBlocks.KIWI_PLANT.get(), MItems.KIWI.get(),3, registrylookup); // even if it does not have the same seed
     }
 
-    private void createCropBlockWithSameSeed(Block cropBlock, BlockItem drop , int MAXAGE, HolderLookup.RegistryLookup<Enchantment> registrylookup) {
+    private void createCropBlockWithSameSeed(Block cropBlock, Item drop , int MAXAGE, HolderLookup.RegistryLookup<Enchantment> registrylookup) {
 
 
         //condtion; is the crop grown?

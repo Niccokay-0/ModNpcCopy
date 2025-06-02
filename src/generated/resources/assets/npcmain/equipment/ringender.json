@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "npcmain:ringender"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "npcmain:ringender"
+      }
+    ]
+  }
+}

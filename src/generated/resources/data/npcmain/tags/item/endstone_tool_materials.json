@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#npcmain:ender_items",
+    "#npcmain:purpur_items",
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:purpur_block"
+  ]
+}

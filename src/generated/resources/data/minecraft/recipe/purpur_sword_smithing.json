@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "npcmain:purpured_netherite_ingot",
+  "base": "minecraft:netherite_sword",
+  "result": {
+    "id": "npcmain:purpur_sword"
+  },
+  "template": "npcmain:purpur_smithing_upgrade"
+}

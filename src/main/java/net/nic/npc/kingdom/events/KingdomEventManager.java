@@ -1,7 +1,6 @@
 package net.nic.npc.kingdom.events;
 
 import net.minecraft.world.item.ItemStack;
-import net.nic.npc.NpcMain;
 import net.nic.npc.entity.customEntity.npc.NPC;
 import net.nic.npc.kingdom.Kingdom;
 import net.nic.npc.kingdom.users.KingdomNPC;
@@ -30,7 +29,6 @@ public class KingdomEventManager {
         KingdomUser user = users.computeIfAbsent(playerID, KingdomUser::new);
 
         if (user.isInKingdom()) {
-            NpcMain.LOGGER.error("COULDN'T CREATE KINGDOM: {} for the player:  With Gov: {}", name, government);
             return false;
         } else {
             String description = "Kingdom!";
@@ -40,7 +38,6 @@ public class KingdomEventManager {
             newKingdom.setGovernment(government);
 
             user.joinKingdom(newKingdom.getKingdomUUID(), government, true);
-            NpcMain.LOGGER.debug("CREATED KINGDOM: {} for the player:  With Gov: {}", name, government);
             return true;
         }
     }
@@ -90,17 +87,12 @@ public class KingdomEventManager {
         return true;
     }
 
-    public boolean recruitPlayer(UUID recruiterID, UUID recruited) {
-        KingdomUser user = users.get(recruiterID);
-
-        if (user == null || !user.isInKingdom()) return false;
-        UUID kingdomID = user.getKingdomID();
-        Kingdom kingdom = kingdoms.get(kingdomID);
-
-        if (!user.isLeader(kingdom.getGovernment()) || !user.isVice(kingdom.getGovernment())) return false;
-
-        KingdomUser recruitedUser = users.computeIfAbsent(recruiterID, KingdomUser::new);
-        recruitedUser.joinKingdom(kingdomID, kingdom.getGovernment(), false);
+    public boolean recruitPlayer(UUID kingdomID, UUID recruited) {
+        KingdomUser user = users.computeIfAbsent(recruited, KingdomUser::new);
+        Kingdom kingdom = getKingdom(kingdomID);
+        if (kingdom == null || user.isInKingdom() || user == null) return false;
+        getKingdom(kingdomID);
+        user.joinKingdom(kingdomID, kingdom.getGovernment(),false);
         return true;
     }
 

@@ -7,7 +7,15 @@ import net.minecraft.world.item.Item;
 
 public class MItem extends Item {
 
+
+
     public MItem(ResourceLocation name, Properties properties) {
         super(properties.setId(ResourceKey.create(Registries.ITEM, name)));
     }
+
+
 }
+
+
+
+

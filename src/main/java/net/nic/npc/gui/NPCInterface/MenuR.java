@@ -18,7 +18,7 @@ public class MenuR extends AbstractContainerMenu {
     public Player player;
     public Kingdom playerKingdom;
     private NPC npc;
-
+    public static String failedKingdomCreationString = "npc.gui.recruit.failed.kingdom.false";
     public MenuR(int containerId, Inventory pInv) {
         super(MMenus.MENUR.get(), containerId);
         this.player = pInv.player;
@@ -37,7 +37,8 @@ public class MenuR extends AbstractContainerMenu {
             kingdom.addCitizen(citizen);
             kingdom.setFoodNeeded();
         }
-        else player.displayClientMessage(Component.translatable("npc.gui.recruit.failed.kingdom.false"),true);
+
+        else player.displayClientMessage(Component.translatable(failedKingdomCreationString),true);
     }
 
 

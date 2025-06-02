@@ -1,4 +1,6 @@
-// 1.21.5	2025-05-20T22:28:38.4549887	Loot Tables
-d694c8bf5787bc9070bd4c1772a6b076b19ce6be data/npcmain/loot_table/blocks/blueberry_bush.json
+// 1.21.5	2025-06-02T11:21:44.914142	Loot Tables
+97c0913969cb0410bf9c04b6feb46681a9e1f06b data/npcmain/loot_table/blocks/blueberry_crop.json
+f475ac3e632e3fd55e54168c1b27c8310490c4f8 data/npcmain/loot_table/blocks/infuser.json
 8d9ce4902758a3a64720acd321ceb4ba7535e5e9 data/npcmain/loot_table/blocks/kingdom_block.json
+b1dce0870868be5965fa251b273a937a11c44193 data/npcmain/loot_table/blocks/kiwi_plant.json
 07f0cb4e5b93428c74bd00e67fb25c083f5566e9 data/npcmain/loot_table/blocks/strawberry_crop.json

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stick",
+    "npcmain:kiwi"
+  ],
+  "result": {
+    "count": 1,
+    "id": "npcmain:kiwi_seedling"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "npcmain:block/infuser_down",
+    "east": "npcmain:block/infuser_east",
+    "north": "npcmain:block/infuser_north",
+    "particle": "npcmain:block/infuser_particle",
+    "south": "npcmain:block/infuser_south",
+    "up": "npcmain:block/infuser_up",
+    "west": "npcmain:block/infuser_west"
+  }
+}

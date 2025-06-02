@@ -18,6 +18,8 @@ public class CustomEquipmentAssets {
 
 
     public static final ResourceKey<EquipmentAsset> BLAZED = id("blazed");
+    public static final ResourceKey<EquipmentAsset> RINGENDER = id("ringender");
+    public static final ResourceKey<EquipmentAsset> PURPUR = id("purpur");
 
 
     private static ResourceKey<EquipmentAsset> id(String name) {
@@ -26,6 +28,8 @@ public class CustomEquipmentAssets {
 
     public static void bootstrap(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> consumer) {
         consumer.accept(CustomEquipmentAssets.BLAZED, onlyHumanoid("blazed"));
+        consumer.accept(CustomEquipmentAssets.RINGENDER, onlyHumanoid("ringender"));
+        consumer.accept(CustomEquipmentAssets.PURPUR, onlyHumanoid("purpur"));
 
         //for more EQUIPMENT ASSETS -> consumer.accept(THE KEY, onlyHumanoid(id)); ONLY FOR HUMANOID ARMORS
     }
